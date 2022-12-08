@@ -1,0 +1,144 @@
+body{
+   background-image: url(https://cdn.glitch.com/4e6233f2-e4b6-4ea0-93e5-d6b650459072%2Fimage11.jpg?v=1628471828946);
+   background-repeat: repeat-y;
+   background-size: 100%;
+   background-position: center;
+   font-family: 'Hachi Maru Pop', cursive;
+   max-height: 100vh;
+   margin: 0;
+}
+h1{
+   font-family: 'Hachi Maru Pop', cursive;
+   font-size: 52px;
+   padding: 0px;
+   font-weight: bold;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: rgb(27, 99, 192);
+   text-shadow: 2px 2px 3px rgb(202, 114, 14);
+}
+.tableContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  background-color: rgba(234, 239, 245, 0.8);
+   width: 85%;
+   min-height: 70vh;
+   margin: 5% 3% 2% 6%;
+   border-radius: 70px;
+   border: none;
+   /*background: rgb(249,246,171);
+background: radial-gradient(circle, rgba(249,246,200,0.5) 8%, rgba(166,177,176,0.6) 55%);
+   min-height: 100vh;
+   margin: 0;*/
+}
+.table{
+   display: flex;
+   flex-wrap: wrap;
+   border: 8px solid rgb(27, 99, 192);
+   border-collapse: collapse;
+   justify-content: center;
+   background-color: #fff;
+  }
+
+.field{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid rgb(202, 114, 14);
+   width: 85px;
+   height: 85px;
+   margin: 15px;
+   border-radius: 50px;
+   font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+}
+.sum{
+   background-color: rgba(202, 114, 14, 0.4);
+   border-radius: 50px;
+   font-size: 20px;
+   font-weight: 900;
+   width: 83px;
+   height: 83px;
+   border: 2px solid rgb(160, 130, 34);
+}
+input{
+   border: none;
+   width: 50px;
+   cursor: pointer;
+   padding: 5px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 700;
+}
+input:focus, textarea:focus {outline: none;}
+button{
+   margin: 15px;
+   font-size: 18px;
+   font-family: 'Hachi Maru Pop', cursive;
+   background-color: rgb(27, 99, 192);
+  border: 1 px solid #fff;
+   color: #fff;
+   font-weight: 900;
+   padding: 10px;
+   
+}
+button:hover{
+   background-color: rgb(202, 114, 14);
+}
+@media screen and (max-width: 500px){
+   .field{
+      width: 65px;
+      height: 65px;
+      margin: 5px;
+      font-size: 16px;
+   }
+   .sum{
+      font-size: 18px;
+      width: 64px;
+      height: 64px;
+   }
+   input{
+      width: 25px;
+      font-size: 16px;
+      font-weight: 700;
+   }
+   h1{
+      font-size: 36px;
+        margin-top: 15px;
+   margin-bottom: 5px;
+   }
+  .tableContainer{
+   justify-content: flex-start;
+   align-items: center;
+  }
+   }
+
+@media screen and (max-width: 350px){
+   .field{
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      font-size: 14px;
+   }
+   .sum{
+      font-size: 16px;
+      width: 49px;
+      height: 49px;
+   }
+   input{
+      width: 18px;
+      font-size: 14px;
+      font-weight: 700;
+   }
+   h1{
+      font-size: 34px;
+      margin-top: 10px;
+   margin-bottom: 5px;
+   }
+  .tableContainer{
+   justify-content: flex-start;
+   align-items: center;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <title>San-Go-Ku</title>
+  </head>
+  <body>
+    <div class="tableContainer">
+      <h1>San-Go-Ku</h1>
+      <button id="newBtn">NEW GAME</button>
+      <div class="table">
+        <div class="columnOne">
+          <div class="field" id="numberOne_one"></div>
+          <div class="field"><input type="text" id="inputTwo_one" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></div>
+          <div class="field">
+            <input type="text" id="inputThree_one" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>&nbsp;
+          </div>
+          <div class="field sum" id="sumOne_horiz"></div>
+        </div>
+
+        <div class="columnTwo">
+          <div class="field"><input type="text" id="inputOne_two" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></div>
+          <div class="field" id="numberTwo_two"></div>
+          <div class="field"><input type="text" id="inputThree_two" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></div>
+          <div class="field sum" id="sumTwo_horiz"></div>
+        </div>
+
+        <div class="columnThree">
+          <div id="numberOne_three" class="field"></div>
+          <div class="field"><input type="text" id="inputTwo_three" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" /></div>
+          <div id="numberThree_three" class="field"></div>
+          <div class="field sum" id="sumThree_horiz"></div>
+        </div>
+
+        <div class="rowFour">
+          <div class="field sum" id="sumOne_vert"></div>
+          <div class="field sum" id="sumTwo_vert"></div>
+          <div class="field sum" id="sumThree_vert"></div>
+        </div>
+      </div>
+      <button id="btn">SUBMIT</button>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
